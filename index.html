@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <link rel="shortcut icon" type="x-icon" href="logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AtmoSphere</title>
+  <style>
+    body {
+      background-color: #110040;
+      margin: 0;
+      padding: 0;
+      height: 2000px;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      border: 3px solid transparent;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    p, h1 {
+      color: #ffffff;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    #top_bar {
+      display: flex;
+      align-items: center;
+      padding: 0 2%;
+      margin: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 7%;
+      box-sizing: border-box;
+      background-color: rgba(17, 0, 64, 0.551);
+      z-index: 2;
+    }
+
+    #top_bar img {
+      height: 100%;
+    }
+
+    #top_bar h1 {
+      padding-left: 2%;
+    }
+
+    .content {
+      margin-top: 10%;
+      padding: 0;
+      box-sizing: border-box;
+      z-index: 1;
+      position: relative;
+      /*border: 2px solid #ffffff;*/
+      text-align: center;
+    }
+
+    .content img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .sottotitolo {
+      /*border: 2px solid #ffffff;*/
+      margin-top: 0;
+      padding: 0;
+      box-sizing: border-box;
+      z-index: 1;
+      position: relative;
+      text-align: center;
+    }
+
+    .sottotitolo p {
+      margin: 0;
+      font-size: 150%;
+    }
+
+    .right-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2%;
+      align-items: flex-start;
+    }
+
+    .info {
+      width: 50%;
+      color: white;
+      font-size: 300%;
+    }
+
+    iframe {
+      border: 0;
+      padding-bottom: 10px;
+      padding-top: 30px;
+      height: 700px;
+    }
+    
+    #Levante{
+      color: #FFF;
+      background-color: transparent;
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+    }
+
+  </style>
+</head>
+<body>
+  <img src="background.jpg" alt="background" class="background-image">
+  <div id="top_bar">
+    <img src="logo.jpg" alt="logo">
+    <h1>AtmoSphere</h1>
+  </div>
+  <div class="content">
+    <img src="titolo.jpg" alt="titolo" width="80%">
+  </div>
+  <div class="sottotitolo">
+    <p>at</p>
+  </div>
+  <div class="sottotitolo" style="font-size: 250%;">
+    <p id="Levante">LEVANTE</p>
+  </div>
+  <div class="sottotitolo">
+    <p>Fregene</p>
+  </div>
+  <div class="sottotitolo">
+    <p>30/08/2024 21:00-3:00</p>
+  </div>
+  <div class="content" style="margin-bottom: 0;">
+    <img src="locandina.jpg" alt="locandina" style="width: 80%; max-width: 600px;">
+  </div>
+  <div class="sottotitolo" style="margin-top: 5%; padding: 0; padding-bottom: 0;">
+    <h1 style="font-size: 300%;"><strong>LA PRIMA SILENT PARTY A FREGENE!</strong></h1>
+  </div>
+  <div class="content" style="padding: 0; margin: 0; text-align: center; color: white;">
+    <p style="font-size: 150%; margin: 0;">
+      Se sei stufo delle solito feste e della solita musica... se ogni volta che la festa finisce andresti avanti a ballare per ore...<br>
+      Dopo questa silent party non tornerai più indietro!<br><br>
+      Dal tramonto al mattino, balla con la musica in cuffia scegliendo il genere che preferisci e cambiando quando vuoi.<br>
+      Canta a squarcia gola e perditi nel mare di luci che si creerà intorno a te!<br><br>
+      <strong>ATTENZIONE</strong><br><br>
+      QUESTO EVENTO PUÒ PORTARE DIPENDENZA E GRAVI EFFETTI COLLATERALI.<br><br>
+      POSSIBILI EFFETTI COLLATERALI:<br>
+      Incontrollabile desiderio di tornare ad una silent party by ATMOSPHERE.<br>
+      Manifestarsi di un grave senso di noia a tutte le altre feste.
+    </p>
+  </div>
+  <div class="content" style="margin: 0;">
+    <img src="biglietti.jpg" alt="biglietti" style="width: 20%;">
+  </div>
+  <div class="right-container">
+    <p class="info">Informazioni e Recapiti</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.138414376649!2d12.193542475903294!3d41.84684747124534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325f911ec45bf0f%3A0x80d6e9aed4b831df!2sLEVANTE%20-%20Stabilimento%20e%20Ristorante!5e0!3m2!1sit!2sit!4v1722341329761!5m2!1sit!2sit" width="50%" height="375" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>
