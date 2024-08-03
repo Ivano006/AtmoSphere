@@ -123,6 +123,70 @@
       text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
     }
 
+    #info_biglietto p{
+      margin: 0;
+      font-size: 200%;
+      color: #FFF;
+      background-color: transparent;
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+    }
+
+    #biglietti{
+      width: 30%;
+      transition: transform 4s;
+    }
+    
+    #biglietti:hover{
+      transform: scale(1.2);
+    }
+
+
+    #descrizione_titolo{
+      font-size: 300%;
+    }
+
+    #descrizione{
+      font-size: 150%; 
+      margin: 0;
+    }
+
+
+    @media only screen and (max-width: 400px)
+     {
+      #titolo{
+        padding-top: 30px;
+      
+      }
+    }
+    @media only screen and (max-width: 900px){
+
+      #biglietti{
+        width: 200px;
+      }
+
+      #info_biglietto p{
+      margin: 0;
+      font-size: 150%;
+      color: #FFF;
+      background-color: transparent;
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+    }
+
+    #descrizione_titolo{
+      font-size: 200%;
+      margin: 4px;
+    }
+
+    #descrizione{
+      font-size: 100%; 
+      margin: 20px;
+    }
+
+    }
+
+
+    
+
   </style>
 </head>
 <body>
@@ -132,7 +196,7 @@
     <h1>AtmoSphere</h1>
   </div>
   <div class="content">
-    <img src="titolo.jpg" alt="titolo" width="80%">
+    <img src="titolo.jpg" alt="titolo" width="80%" id="titolo">
   </div>
   <div class="sottotitolo">
     <p>at</p>
@@ -150,10 +214,10 @@
     <img src="locandina.jpg" alt="locandina" style="width: 80%; max-width: 600px;">
   </div>
   <div class="sottotitolo" style="margin-top: 5%; padding: 0; padding-bottom: 0;">
-    <h1 style="font-size: 300%;"><strong>LA PRIMA SILENT PARTY A FREGENE!</strong></h1>
+    <h1 id="descrizione_titolo"><strong>LA PRIMA SILENT PARTY A FREGENE!</strong></h1>
   </div>
   <div class="content" style="padding: 0; margin: 0; text-align: center; color: white;">
-    <p style="font-size: 150%; margin: 0;">
+    <p id="descrizione">
       Se sei stufo delle solito feste e della solita musica... se ogni volta che la festa finisce andresti avanti a ballare per ore...<br>
       Dopo questa silent party non tornerai più indietro!<br><br>
       Dal tramonto al mattino, balla con la musica in cuffia scegliendo il genere che preferisci e cambiando quando vuoi.<br>
@@ -166,11 +230,20 @@
     </p>
   </div>
   <div class="content" style="margin: 0;">
-    <img src="biglietti.jpg" alt="biglietti" style="width: 20%;">
+    <img src="biglietti.jpg" alt="biglietti" id="biglietti">
+    <div style="margin-top: 20px; font-size: 150%; color: white;" id="info_biglietto">
+      <p>𝕀𝕟𝕘𝕣𝕖𝕤𝕤𝕠 𝕚𝕟 𝕫𝕠𝕟𝕒 𝕡𝕚𝕤𝕔𝕚𝕟𝕒<br></p>
+      <p>+</p>
+      <p>ℂ𝕠𝕔𝕜𝕥𝕒𝕚𝕝 𝕒𝕝𝕔𝕠𝕝𝕚𝕔𝕠<br></p>
+      <p>+</p>
+      <p>ℂ𝕦𝕗𝕗𝕚𝕖 𝕝𝕖𝕕 𝕒 𝟛 𝕔𝕒𝕟𝕒𝕝𝕚<br></p>
+      <p>
+        €25,00
+      </p>
+    </div>
   </div>
   <div class="right-container">
     <p class="info">Informazioni e Recapiti</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.138414376649!2d12.193542475903294!3d41.84684747124534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325f911ec45bf0f%3A0x80d6e9aed4b831df!2sLEVANTE%20-%20Stabilimento%20e%20Ristorante!5e0!3m2!1sit!2sit!4v1722341329761!5m2!1sit!2sit" width="50%" height="375" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.138414376649!2d12.193542475903294!3d41.84684747124534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325f911ec45bf0f%3A0x80d6e9aed4b831df!2sLEVANTE%20-%20Stabilimento%20e%20Ristorante!5e0!3m2!1sit!2sit!4v1722341329761!5m2!1sit!2sit" width="50%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
