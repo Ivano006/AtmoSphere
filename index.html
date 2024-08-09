@@ -80,8 +80,14 @@
     }
 
     #top_bar h1 {
+      font-size: 200%;
       align-items: right;
       padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    #top_bar p {
+      font-size: 100%;
     }
 
     .led_box{
@@ -117,6 +123,14 @@
       margin: 0;
       font-size: 150%;
     }
+
+    .Uright-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2%;
+      align-items: flex-start;
+    }
+
 
     .right-container {
       display: flex;
@@ -204,8 +218,25 @@
 
     @media only screen and (max-width: 600px)
      {
+
+      #top_bar img {
+      align-items: right;
+      height: 70%;
+      }
+
+      #top_bar h1 {
+      font-size: 150%;
+      align-items: right;
+      padding-left: 2%;
+      padding-right: 2%;
+      }
+
+      #top_bar p {
+        font-size: 80%;
+      }
+
       #titolo{
-        padding-top: 30px; 
+        padding-top: 50px; 
       }
       body {
       overflow-x: hidden;
@@ -282,7 +313,7 @@
 </head>
 <body>
   <img src="background.jpg" alt="background" class="background-image">
-  <div id="top_bar" class="right-container">
+  <div id="top_bar" class="Uright-container">
     <div>
       <img src="Patrocinio.png" alt="logo">
       <p style="margin-left: 2%;">Con il Patrocinio dell' Amministrazione Comunale di Fiumicino</p>
