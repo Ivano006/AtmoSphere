@@ -46,8 +46,7 @@
     }
 
     #top_bar {
-      display: flex;
-      align-items: center;
+      align-items: right;
       padding: 0 2%;
       margin: 0;
       position: fixed;
@@ -59,11 +58,29 @@
       z-index: 3;
     }
 
+    #top_bar div{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #top_bar div:first-child {
+      justify-content: flex-start;
+    }
+
+    #top_bar div:last-child {
+      justify-content: flex-end;
+    }
+
     #top_bar img {
+      align-items: right;
       height: 100%;
     }
 
     #top_bar h1 {
+      align-items: right;
       padding-left: 2%;
     }
 
@@ -265,9 +282,15 @@
 </head>
 <body>
   <img src="background.jpg" alt="background" class="background-image">
-  <div id="top_bar">
-    <img src="logo.png" alt="logo">
-    <h1>AtmoSphere</h1>
+  <div id="top_bar" class="right-container">
+    <div>
+      <img src="Patrocinio.png" alt="logo">
+      <p style="margin-left: 2%;">Con il Patrocinio dell' Amministrazione Comunale di Fiumicino</p>
+    </div>
+    <div>
+      <img src="logo.png" alt="logo">
+      <h1>AtmoSphere</h1>
+    </div>
   </div>
   <div class="content">
     <img src="titolo.jpg" alt="titolo" width="80%" id="titolo">
@@ -326,7 +349,7 @@
   <div class="right-container" style="margin-top: 50px;">
     <div id="info_box">
       <p class="info">Informazioni e Recapiti</p>
-      <p>Organizzatore:</p>
+      <p>AtmoSphere events:</p>
       <p>Mail: Ats.events.fmv@gmail.com</p>
       <p>Cell: 333 509 5151</p>
       <p>Social:</p>
